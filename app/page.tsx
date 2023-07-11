@@ -5,9 +5,9 @@ import {FiEye} from "react-icons/fi";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="bg-white">
-          <div className="rounded-b-3xl bg-gradient-to-b from-[#7115cc] to-[#3201b8] h-[400px] w-[400px] flex flex-col items-center">
+    <main className="flex flex-col items-center justify-between m-10">
+      <div className="bg-white md:flex md:rounded-3xl">
+          <div className="md:rounded-3xl md:h-[500px] rounded-b-3xl bg-gradient-to-b from-[#7115cc] to-[#3201b8] h-[400px] w-[400px] flex flex-col items-center">
               <p className="py-8 text-xl">
                   Your Result
               </p>
@@ -25,9 +25,9 @@ export default function Home() {
                   tests.</span>
               </p>
           </div>
-          <div className="bg-white w-[400px] h-[500px] flex flex-col my-5">
-              <div className="mx-5">
-                  <p className="text-black ml-1 mb-3 text-lg font-semibold">
+          <div className="bg-white w-[400px] h-[450px] flex flex-col mt-5 mb-2 md:my-0 md:rounded-r-3xl">
+              <div className="mx-5 md:h-[500px]">
+                  <p className="text-black ml-1 mb-3 text-lg font-semibold md:mt-2">
                       Summary
                   </p>
                   <div className="bg-red-100 flex rounded-2xl h-[60px] p-2 items-center">
@@ -73,8 +73,8 @@ export default function Home() {
                           <span className="text-black opacity-50 ml-1">/  100</span>
                       </div>
                   </div>
-                  <div className="flex items-center justify-center m-5 mt-10">
-                      <button className="bg-black h-[60px] w-[500px] opacity-80 rounded-full">
+                  <div className="flex items-center justify-center m-5 mt-7 md:mt-10">
+                      <button className="h-[60px] w-[500px] px-4 py-2 text-white bg-blue-500 rounded-3xl hover:bg-blue-700 active:scale-90 transition duration-150 ease-in-out">
                           Continue
                       </button>
                   </div>
