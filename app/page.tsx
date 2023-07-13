@@ -3,10 +3,15 @@ import {HiOutlineClock} from "react-icons/hi";
 import {AiOutlineMessage} from "react-icons/ai";
 import {FiEye} from "react-icons/fi";
 import Head from "next/head";
+import Header from "@/app/components/header";
 
 export default function Home() {
     return (
-        <main className="flex flex-col items-center justify-between m-10">
+        <main className="flex flex-col items-center justify-center">
+            <Header/>
+            <br/>
+            <br/>
+            <br/>
             <Head>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WJ0EM90VM"></script>
                 <script
