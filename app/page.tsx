@@ -3,15 +3,15 @@ import {HiOutlineClock} from "react-icons/hi";
 import {AiOutlineMessage} from "react-icons/ai";
 import {FiEye} from "react-icons/fi";
 import Head from "next/head";
-import Header from "@/app/components/header";
+import Header from "@/app/components/client/header";
 
 export default function Home() {
     return (
-        <main className="flex flex-col items-center justify-center">
+        <main className="flex flex-col items-center justify-center bg-white">
             <Header/>
+            {/* <br/>
             <br/>
-            <br/>
-            <br/>
+            <br/> */}
             <Head>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WJ0EM90VM"></script>
                 <script
@@ -37,7 +37,7 @@ export default function Home() {
                         }}
                 />
             </Head>
-            <div className="bg-white md:flex md:rounded-3xl">
+            <div className="bg-white md:flex md:rounded-3xl m-20">
                 <div
                     className="md:rounded-3xl md:h-[500px] rounded-b-3xl bg-gradient-to-b from-[#7115cc] to-[#3201b8] h-[400px] w-[400px] flex flex-col items-center">
                     <p className="py-8 text-xl">
