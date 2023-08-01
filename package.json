@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next-sitemap --config next-sitemap.config.js",
     "start": "next start",
-    "lint": "next lint",
-    "postbuild": "next-sitemap --config next-sitemap.config.js"
+    "lint": "next lint"
+    
   },
   "dependencies": {
     "@types/node": "20.4.1",
@@ -27,6 +27,8 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "esm": "^3.2.25",
+    "globby": "^13.2.2",
     "mini-css-extract-plugin": "^2.7.6",
     "prettier": "^3.0.0"
   }
